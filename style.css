@@ -1,0 +1,243 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Audiowide", sans-serif;
+}
+
+.main {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.bolded {
+  font-weight: bold;
+  color: #ba1e68;
+}
+
+.title {
+  font-size: 30px;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.navbar a {
+  text-align: center;
+  width: 8%;
+  height: 100px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* reference to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu */
+.overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  margin-bottom: 50px;
+}
+
+
+.container {
+  margin: 40px;
+  position: relative;
+  width: 600px;
+  border: 2px solid #333;
+  border-radius: 5px;
+
+}
+
+.image {
+  display: block;
+  width: 600px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.persona {
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  background-color: #414a4c;
+  color: #ddd;
+}
+
+.persona h1 {
+  padding-top: 40px;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.persona h2 {
+  font-size: 32px;
+  padding-left: 250px;
+  padding-right: 250px;
+  color: #C8BDA4;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.persona p {
+  font-size: 24px;
+  padding-left: 250px;
+  padding-right: 250px;
+  line-height: 40px;
+  padding-bottom: 50px;
+}
+
+.persona img {
+  padding-left: 250px;
+  width: 1000px;
+  height: auto;
+}
+
+.read-more {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  left: 50%;
+  width: 30%;
+  height: 80px;
+  text-align: center;
+  background-color: #333;
+  color: #ddd;
+  border: 5px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.read-more-2 {
+  margin-bottom: 60px;
+  left: 50%;
+  width: 30%;
+  height: 80px;
+  text-align: center;
+  background-color: #333;
+  color: #ddd;
+  border: 5px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Audiowide", sans-serif;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.read-more:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.read-more-2:hover {
+  cursor: pointer;
+  color: #0ABAB5;
+}
+
+.redesign {
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  color: #303E42;
+}
+
+
+.redesign h1 {
+  padding-top: 40px;
+  font-size: 36px;
+  text-align: center;
+  color: #2f3939;
+}
+
+.redesign h2 {
+  font-size: 32px;
+  padding-left: 250px;
+  padding-right: 250px;
+  color: #303E42;
+  text-shadow: 1px 1px 3px #333;
+}
+
+.redesign p {
+  font-size: 24px;
+  padding-left: 250px;
+  padding-right: 250px;
+  line-height: 40px;
+}
+
+.redesign a {
+  padding-left: 250px;
+  color: #333;
+}
+
+.redesign a:hover {
+  color: #0ABAB5;
+}
+
+.redesign img {
+  margin-left: 250px;
+  padding-bottom: 40px;
+  height: auto;
+}

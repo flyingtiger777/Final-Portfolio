@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <title>Final Portfolio</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#persona">Persona & Storyboading</a>
+    <a href="#redesign">Website Redesign</a>
+    <a href="#react">React Development</a>
+    <a href="#android">Android Development</a>
+  </div>
+
+  <div id="home" style="height: 10px;"></div>
+  <div class="main">
+    <div class="title">
+      <h1>Welcome to My Portfolio</h1>
+    </div>
+
+    <div class="overview">
+      <div class='container'>
+        <img src="persona.png" class='image'>
+        <div class='overlay'>
+          <a href="#persona" style="text-decoration:none;" class='text'>Persona & Storyboading</a>
+        </div>
+      </div>
+      <div class='container'>
+        <img src="redesign.png" class='image' style="margin-top:30px;">
+        <div class='overlay'>
+          <a href="#redesign" style="text-decoration:none;" class='text'>Responsive Web Redesign</a>
+        </div>
+      </div>
+      <div class='container'>
+        <img src="react.png" class='image' style="margin-top:20px;">
+        <div class='overlay'>
+          <div class='text'>React Development</div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <img src="android.png" class='image'>
+        <div class='overlay'>
+          <div class='text'>Android App Design</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="persona" style="height: 50px;"></div>
+    <div class="persona">
+      <h1>Personas & Storyboarding</h1>
+      <div>
+        <h2>Abstract</h2>
+        <p>In this project, I selected an accessible interface in public view and recorded observations from the users.
+          I also prepared a list of interview questions for the users regarding their experiences with the interface.
+          Their responses were summarized and I created two personas from the data I
+          collected. Finally, I created a storyboard of 12 frames for one of the personas that I created.</p>
+      </div>
+
+      <div>
+        <h2>Background</h2>
+        <p>In recent years, the increase in people’s consumption power has coincided with the rise in living standards.
+          In grocery stores, there are frequently long lines at the counter. Therefore, more and more supermarkets have
+          introduced the self-checkout station to improve the efficiency of the checkout process.
+        </p>
+      </div>
+
+      <div>
+        <h2>Interface selection</h2>
+        <p style="padding-bottom: 0">I chose to observe the CVS self-checkout station</p>
+        <img src="persona/CVS self checkout.png" alt="self-checkout sketch "></img>
+        <p>The interface mainly has 5 parts including a screen to display instructions and scanning lists, a credit card
+          machine to complete payment, a scanning area to scan the goods, a small table for unscanned goods, and another
+          table for weighting and bagging. </p>
+      </div>
+
+      <div class=" persona-display">
+        <h2>Personas</h2>
+        <p style="padding-bottom: 0">After I completed my observations and summarized the users' responses to my
+          interview questions, I created the following personas.</p>
+        <p style="padding-bottom: 0; color:  #0ABAB5 ;"> Click the Persona image to view the next one. It might take
+          some
+          time to load.</p>
+        <img src="persona/tarzan.png" id="persona-img" style="cursor:pointer; width: 800px; height:auto;"
+          onclick="changeImage()">
+        <script>
+          function changeImage() {
+            var image = document.getElementById('persona-img');
+            if (image.src.match("persona/tarzan.png")) {
+              image.src = "persona/Mary.png";
+            }
+            else {
+              image.src = "persona/tarzan.png";
+            }
+          }
+        </script>
+      </div>
+
+      <div class="storyboard">
+        <h2>Storyboarding</h2>
+        <table style="table-layout: fixed; margin: auto;">
+          <tr>
+            <td>
+              <figure>
+                <img src="persona/1.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan plays basketball on Friday night</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/2.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan plans to get a drink and some snacks
+                </figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/3.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan goes to a CVS shop on his way home</figcaption>
+              </figure>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img src="persona/4.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 24px;">Tarzan grabs a drink from the shelves</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/5.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan goes to self-checkout to avoid the queue
+                </figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/6.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan puts the drink under the scanner</figcaption>
+              </figure>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img src="persona/7.png" style="width: 400px; padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan swipes with the card machine</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/8.png" style="width: 400px;padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">The payment does not go through</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/9.png" style="width: 400px;padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan is confused and frustrated</figcaption>
+              </figure>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <figure>
+                <img src="persona/10.png" style="width: 400px;padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Alert: "Please place your item in the bagging area”
+                </figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/11.png" style="width: 400px;padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan swipes again after dropping at the right place
+                </figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img src="persona/12.png" style="width: 400px;padding-left: 0;">
+                <figcaption style="width:400px;font-size: 20px;">Tarzan is mad at the superflueous step</figcaption>
+              </figure>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="text-align: center;">
+        <button onClick="window.open('https://flyingtiger777.github.io/CS1300_Personas-Storyboarding/')"
+          class="read-more">Read more about the project</button>
+      </div>
+    </div>
+
+    <div id="redesign" style="height: 50px;"></div>
+    <div class="redesign">
+      <h1>Responsive Redesign</h1>
+      <div>
+        <h2>Abstract</h2>
+        <p style="padding-bottom: 50px;">In this project, I selected a simple restaurant online ordering site to
+          practice the
+          workflow of redesigning a simple website. I first identified the usability problems with the website and then
+          check its accessibility with WebAIM WAVE. Secondly, I utilized both low-fidelity and high-fidelity prototyping
+          to visually redesign the webpage. Finally, I applied HTML and CSS to conduct a responsive redesign of the
+          webpage.
+        </p>
+      </div>
+
+      <div>
+        <h2>Background</h2>
+        <p style="padding-bottom: 50px;">Chongqing House is a popular place in Providence as one of the few local
+          Chinese restaurants. However, my
+          friends and I had to frequently order food online because of its distance from Brown University. Moreover,
+          They do not work with any delivery platforms such as Uber or DoorDash, so we had to order directly from its
+          custom-made ordering website.
+        </p>
+      </div>
+
+      <div>
+        <h2>Original Website</h2>
+        <a style="font-size: 30px;" href="https://www.chongqinghouseri.com/">Visit the original
+          website!</a>
+        <p>Go to https://www.chongqinghouseri.com/</p>
+        <p>As a restaurant ordering site, I think images are more effective than words in highlighting the deliciousness
+          of the food. I chose the website because I think the design is text-heavy and the layout is outdated.</p>
+        <img
+          style="width:600px;height: 100%;margin-bottom: 50px;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);"
+          src="redesign/origin.png" alt="origin">
+      </div>
+
+      <div>
+        <h2>Redesign Website</h2>
+        <div>
+          <a style="font-size: 30px;" href="https://flyingtiger777.github.io/CS1300_Redesign-Webdev/">Visit the redesign
+            website!</a>
+        </div>
+        <p>Go to https://flyingtiger777.github.io/CS1300_Redesign-Webdev/</p>
+        <img
+          style="width: 1000px;height: 100%;margin-bottom: 50px;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);"
+          src="redesign/new.png" alt="new">
+      </div>
+
+      <div>
+        <h2>Usability Analysis</h2>
+        <p><span class="bolded">Consistency</span><br>At the center of the webpage, it includes an introduction to the
+          restaurant with the big
+          title “Welcome to Chong Qing House”. However, in the detailed description, it mentions a “Tokyo
+          restaurant” and “high-quality fresh sushi”, which are clearly contradictions that leave the users
+          wondering if they are viewing the wrong website.
+        </p>
+        <p><span class="bolded">Flexibility and Efficiency of Use</span><br>The categories section on the left could
+          provide flexibility to
+          experienced users, but it might cause confusion to novice users. The users come to the website to order
+          food online, so the first thing they are most likely to notice is the huge red order online button.
+          After clicking the red button, it shows an identical menu to the categories section. Then, it is a bit
+          weird to have two identical menus showing on screen simultaneously, and if you click the menu at the
+          center of the screen, it redirects you to the same page associated with the categories section, which
+          makes the red button and menu section meaningless.
+        </p>
+        <p><span class="bolded">Recognition</span><br>If you only look at the interface and don't move the mouse over
+          the target, it's
+          difficult to notice that the poster on the right is clickable and takes you to the home page. If you are
+          currently on the homepage, clicking it will have no effect. Similarly, it is not immediately evident
+          that the texts in green are clickable in the working hours display.
+        </p>
+        <p style="margin-bottom: 50px"><span class="bolded">Error prevention</span><br>Although it shows “closed” in the
+          working hours' display
+          section, the whole process
+          of online ordering is not disabled. It only offers error messages when you proceed to check out, which
+          doesn’t necessarily eliminate error-prone conditions.
+        </p>
+      </div>
+
+
+      <div>
+        <h2>Low-fidelity Wireframing</h2>
+        <p style="color:  #0ABAB5">Scroll to view the full Wireframing. <br> Click to view wireframings for
+          different platforms</p>
+        <div style="height:600px;overflow: auto;margin-bottom: 50px;">
+          <img src="redesign/Webpage.png" id="low-fidelity" alt="webpage"
+            style="cursor:pointer;width:500px;height: auto;position: relative;" onclick="changeLow()">
+          <script>
+            function changeLow() {
+              var image = document.getElementById('low-fidelity');
+              if (image.src.match("redesign/Webpage.png")) {
+                image.src = "redesign/Tablet.png";
+              }
+              else if (image.src.match("redesign/Tablet.png")) {
+                image.src = "redesign/Phone.png";
+              }
+              else {
+                image.src = "redesign/Webpage.png";
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+      <div>
+        <h2>High-fidelity Wireframing</h2>
+        <p>Design Style Guide</p>
+        <img src="redesign/Frame 1.png"
+          style="width: 600px; height:100%; padding-bottom: 0;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);">
+        <p>I divided the entire page into different views and skip the repeating menu section.</p>
+        <p style="color:  #0ABAB5">Click the picture to view the next wireframe</p>
+        <img src="redesign/desktop1.png" id="high-fidelity" alt="webpage1"
+          style="cursor:pointer;width:1000px;height: auto;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);"
+          onclick="changeHigh()">
+        <script>
+          function changeHigh() {
+            var image = document.getElementById('high-fidelity');
+            if (image.src.match("redesign/desktop1.png")) {
+              image.src = "redesign/desktop2.png";
+            }
+            else if (image.src.match("redesign/desktop2.png")) {
+              image.src = "redesign/desktop3.png";
+            }
+            else {
+              image.src = "redesign/desktop1.png";
+            }
+          }
+        </script>
+      </div>
+      <p style="color:  #ba1e68">The wireframing annotations are included in the original report.</p>
+      <div style="text-align: center;">
+        <button onClick="window.open('https://flyingtiger777.github.io/CS1300_Redesign-Webdev-Report/')"
+          class="read-more-2">Read more about the project</button>
+      </div>
+    </div>
+
+
+    <div id="react" style="height: 50px;"></div>
+    <div class="persona">
+      <h1>React Development</h1>
+      <div>
+        <h2>Abstract</h2>
+        <p>In this project, I implemented a simple application that allows users to view the products of a bakery shop
+          based
+          on React development. Users can filter the products by their types and sort the products by prices or
+          calories. Additionally, users can add selected products to their favorites and the total price will be
+          displayed.</p>
+      </div>
+      <div>
+        <h2>Interface Overview</h2>
+        <img src="react.png" alt="bakery interface" style="width: 1000px; height:auto">
+      </div>
+      <div>
+        <h2>Usability Analysis</h2>
+        <p>- Used borders and hover effects to indicate the buttons which users can interact with.
+          <br>- Implemented an "All" button to revert from filtering.
+          <br>- Implemented a "Reset" button to reset the sorting settings.
+          <br>- The users can not add duplicated items to the favorite list. By clicking the items in the favorite
+          list, users can remove the item in the list.
+        </p>
+      </div>
+      <div>
+        <h2>Organization of Components</h2>
+        <p>The application consists of 5 components including BakeryItem, Card, CardList, Favorites, and filterList.
+          BakeryItem includes a
+          navigation bar for filtering and sorting as well as a display section for the products. Card and CardList
+          components are for displaying the products in a list of cards style. The favorites component is for the
+          favorites list. Finally, filterList is for updating the list after applying filtering conditions.</p>
+      </div>
+
+      <div>
+        <h2>User Interaction</h2>
+        <p style="padding-bottom: 15px">Users mainly interact with the interface using the buttons. If users click the
+          filtering buttons, the state of
+          types and products will be updated with the filterList component. Similarly, if users click the sorting
+          buttons,
+          the state of types and products will also be updated. I have the "types" parameters to represent different
+          methods, so users can click on different sorting settings and the products will be sorted with different
+          properties such as prices or calories. </p>
+        <p style="padding-bottom: 0px">If the users click on the "add" or "remove" buttons from the
+          product cards or the favorites list, the state of total and favor will be updated as products are added to or
+          removed from the favorites list. The total price inside the Favorites will be automatically calculated and
+          shown
+          in the favorites list.</p>
+      </div>
+      <div style="text-align: center;">
+        <button onClick="window.open('https://flyingtiger777.github.io/bakeryshop/')" class="read-more">Try the Demo
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
