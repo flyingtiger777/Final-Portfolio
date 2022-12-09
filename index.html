@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <title>Final Portfolio</title>
 </head>
 
@@ -15,12 +16,29 @@
     <a href="#redesign">Website Redesign</a>
     <a href="#react">React Development</a>
     <a href="#android">Android Development</a>
+    <a style="position:fixed; right: 0;" href="#contact">Contact</a>
   </div>
 
   <div id="home" style="height: 10px;"></div>
   <div class="main">
     <div class="title">
       <h1>Welcome to My Portfolio</h1>
+      <!-- reference to https://github.com/mattboldt/typed.js/ -->
+      <div class="autotype">
+        <h1>I'm a <span class="auto-type" style="
+background:linear-gradient(#e66465, #9198e5);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;"></span></h1>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Brown Student", "UIUX Designer"],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
+        })
+      </script>
     </div>
 
     <div class="overview">
@@ -39,14 +57,14 @@
       <div class='container'>
         <img src="react.png" class='image' style="margin-top:20px;">
         <div class='overlay'>
-          <div class='text'>React Development</div>
+          <a href="#react" style="text-decoration:none;" class='text'>React Development</a>
         </div>
       </div>
 
       <div class='container'>
         <img src="android.png" class='image'>
         <div class='overlay'>
-          <div class='text'>Android App Design</div>
+          <a href="#android" style="text-decoration:none;" class='text'>Android Development</a>
         </div>
       </div>
     </div>
@@ -78,125 +96,129 @@
           machine to complete payment, a scanning area to scan the goods, a small table for unscanned goods, and another
           table for weighting and bagging. </p>
       </div>
-
-      <div class=" persona-display">
-        <h2>Personas</h2>
-        <p style="padding-bottom: 0">After I completed my observations and summarized the users' responses to my
-          interview questions, I created the following personas.</p>
-        <p style="padding-bottom: 0; color:  #0ABAB5 ;"> Click the Persona image to view the next one. It might take
-          some
-          time to load.</p>
-        <img src="persona/tarzan.png" id="persona-img" style="cursor:pointer; width: 800px; height:auto;"
-          onclick="changeImage()">
-        <script>
-          function changeImage() {
-            var image = document.getElementById('persona-img');
-            if (image.src.match("persona/tarzan.png")) {
-              image.src = "persona/Mary.png";
+      <p style="color: #ba1e68;padding-bottom: 0;"> Click "Read more" to see details</p>
+      <details>
+        <summary class=readmore>Read More</summary>
+        <div class=" persona-display">
+          <h2>Personas</h2>
+          <p style="padding-bottom: 0">After I completed my observations and summarized the users' responses to my
+            interview questions, I created the following personas.</p>
+          <p style="padding-bottom: 0; color:  #0ABAB5 ;"> Click the Persona image to view the next one. It might take
+            some
+            time to load.</p>
+          <img src="persona/tarzan.png" id="persona-img" style="cursor:pointer; width: 800px; height:auto;"
+            onclick="changeImage()">
+          <script>
+            function changeImage() {
+              var image = document.getElementById('persona-img');
+              if (image.src.match("persona/tarzan.png")) {
+                image.src = "persona/Mary.png";
+              }
+              else {
+                image.src = "persona/tarzan.png";
+              }
             }
-            else {
-              image.src = "persona/tarzan.png";
-            }
-          }
-        </script>
-      </div>
+          </script>
+        </div>
 
-      <div class="storyboard">
-        <h2>Storyboarding</h2>
-        <table style="table-layout: fixed; margin: auto;">
-          <tr>
-            <td>
-              <figure>
-                <img src="persona/1.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan plays basketball on Friday night</figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/2.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan plans to get a drink and some snacks
-                </figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/3.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan goes to a CVS shop on his way home</figcaption>
-              </figure>
-            </td>
-          </tr>
+        <div class="storyboard">
+          <h2>Storyboarding</h2>
+          <table style="table-layout: fixed; margin: auto;">
+            <tr>
+              <td>
+                <figure>
+                  <img src="persona/1.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan plays basketball on Friday night</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/2.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan plans to get a drink and some snacks
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/3.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan goes to a CVS shop on his way home
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <figure>
-                <img src="persona/4.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 24px;">Tarzan grabs a drink from the shelves</figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/5.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan goes to self-checkout to avoid the queue
-                </figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/6.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan puts the drink under the scanner</figcaption>
-              </figure>
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <figure>
+                  <img src="persona/4.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 24px;">Tarzan grabs a drink from the shelves</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/5.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan goes to self-checkout to avoid the queue
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/6.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan puts the drink under the scanner</figcaption>
+                </figure>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <figure>
-                <img src="persona/7.png" style="width: 400px; padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan swipes with the card machine</figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/8.png" style="width: 400px;padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">The payment does not go through</figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/9.png" style="width: 400px;padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan is confused and frustrated</figcaption>
-              </figure>
-            </td>
-          </tr>
+            <tr>
+              <td>
+                <figure>
+                  <img src="persona/7.png" style="width: 400px; padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan swipes with the card machine</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/8.png" style="width: 400px;padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">The payment does not go through</figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/9.png" style="width: 400px;padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan is confused and frustrated</figcaption>
+                </figure>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              <figure>
-                <img src="persona/10.png" style="width: 400px;padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Alert: "Please place your item in the bagging area”
-                </figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/11.png" style="width: 400px;padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan swipes again after dropping at the right place
-                </figcaption>
-              </figure>
-            </td>
-            <td>
-              <figure>
-                <img src="persona/12.png" style="width: 400px;padding-left: 0;">
-                <figcaption style="width:400px;font-size: 20px;">Tarzan is mad at the superflueous step</figcaption>
-              </figure>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div style="text-align: center;">
-        <button onClick="window.open('https://flyingtiger777.github.io/CS1300_Personas-Storyboarding/')"
-          class="read-more">Read more about the project</button>
-      </div>
+            <tr>
+              <td>
+                <figure>
+                  <img src="persona/10.png" style="width: 400px;padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Alert: "Please place your item in the bagging area”
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/11.png" style="width: 400px;padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan swipes again after dropping at the right place
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="persona/12.png" style="width: 400px;padding-left: 0;">
+                  <figcaption style="width:400px;font-size: 20px;">Tarzan is mad at the superflueous step</figcaption>
+                </figure>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div style="text-align: center;">
+          <button onClick="window.open('https://flyingtiger777.github.io/CS1300_Personas-Storyboarding/')"
+            class="read-more">Check the Report</button>
+        </div>
+      </details>
     </div>
 
     <div id="redesign" style="height: 50px;"></div>
@@ -247,92 +269,97 @@
           src="redesign/new.png" alt="new">
       </div>
 
-      <div>
-        <h2>Usability Analysis</h2>
-        <p><span class="bolded">Consistency</span><br>At the center of the webpage, it includes an introduction to the
-          restaurant with the big
-          title “Welcome to Chong Qing House”. However, in the detailed description, it mentions a “Tokyo
-          restaurant” and “high-quality fresh sushi”, which are clearly contradictions that leave the users
-          wondering if they are viewing the wrong website.
-        </p>
-        <p><span class="bolded">Flexibility and Efficiency of Use</span><br>The categories section on the left could
-          provide flexibility to
-          experienced users, but it might cause confusion to novice users. The users come to the website to order
-          food online, so the first thing they are most likely to notice is the huge red order online button.
-          After clicking the red button, it shows an identical menu to the categories section. Then, it is a bit
-          weird to have two identical menus showing on screen simultaneously, and if you click the menu at the
-          center of the screen, it redirects you to the same page associated with the categories section, which
-          makes the red button and menu section meaningless.
-        </p>
-        <p><span class="bolded">Recognition</span><br>If you only look at the interface and don't move the mouse over
-          the target, it's
-          difficult to notice that the poster on the right is clickable and takes you to the home page. If you are
-          currently on the homepage, clicking it will have no effect. Similarly, it is not immediately evident
-          that the texts in green are clickable in the working hours display.
-        </p>
-        <p style="margin-bottom: 50px"><span class="bolded">Error prevention</span><br>Although it shows “closed” in the
-          working hours' display
-          section, the whole process
-          of online ordering is not disabled. It only offers error messages when you proceed to check out, which
-          doesn’t necessarily eliminate error-prone conditions.
-        </p>
-      </div>
+      <p style="color: #ba1e68;"> Click "Read more" to see details</p>
+      <details>
+        <summary class=readmore>Read More</summary>
+        <div>
+          <h2>Usability Analysis</h2>
+          <p><span class="bolded">Consistency</span><br>At the center of the webpage, it includes an introduction to the
+            restaurant with the big
+            title “Welcome to Chong Qing House”. However, in the detailed description, it mentions a “Tokyo
+            restaurant” and “high-quality fresh sushi”, which are clearly contradictions that leave the users
+            wondering if they are viewing the wrong website.
+          </p>
+          <p><span class="bolded">Flexibility and Efficiency of Use</span><br>The categories section on the left could
+            provide flexibility to
+            experienced users, but it might cause confusion to novice users. The users come to the website to order
+            food online, so the first thing they are most likely to notice is the huge red order online button.
+            After clicking the red button, it shows an identical menu to the categories section. Then, it is a bit
+            weird to have two identical menus showing on screen simultaneously, and if you click the menu at the
+            center of the screen, it redirects you to the same page associated with the categories section, which
+            makes the red button and menu section meaningless.
+          </p>
+          <p><span class="bolded">Recognition</span><br>If you only look at the interface and don't move the mouse over
+            the target, it's
+            difficult to notice that the poster on the right is clickable and takes you to the home page. If you are
+            currently on the homepage, clicking it will have no effect. Similarly, it is not immediately evident
+            that the texts in green are clickable in the working hours display.
+          </p>
+          <p style="margin-bottom: 50px"><span class="bolded">Error prevention</span><br>Although it shows “closed” in
+            the
+            working hours' display
+            section, the whole process
+            of online ordering is not disabled. It only offers error messages when you proceed to check out, which
+            doesn’t necessarily eliminate error-prone conditions.
+          </p>
+        </div>
 
 
-      <div>
-        <h2>Low-fidelity Wireframing</h2>
-        <p style="color:  #0ABAB5">Scroll to view the full Wireframing. <br> Click to view wireframings for
-          different platforms</p>
-        <div style="height:600px;overflow: auto;margin-bottom: 50px;">
-          <img src="redesign/Webpage.png" id="low-fidelity" alt="webpage"
-            style="cursor:pointer;width:500px;height: auto;position: relative;" onclick="changeLow()">
-          <script>
-            function changeLow() {
-              var image = document.getElementById('low-fidelity');
-              if (image.src.match("redesign/Webpage.png")) {
-                image.src = "redesign/Tablet.png";
+        <div>
+          <h2>Low-fidelity Wireframing</h2>
+          <p style="color:  #0ABAB5">Scroll to view the full Wireframing. <br> Click to view wireframings for
+            different platforms</p>
+          <div style="height:600px;overflow: auto;margin-bottom: 50px;">
+            <img src="redesign/Webpage.png" id="low-fidelity" alt="webpage"
+              style="cursor:pointer;width:500px;height: auto;position: relative;" onclick="changeLow()">
+            <script>
+              function changeLow() {
+                var image = document.getElementById('low-fidelity');
+                if (image.src.match("redesign/Webpage.png")) {
+                  image.src = "redesign/Tablet.png";
+                }
+                else if (image.src.match("redesign/Tablet.png")) {
+                  image.src = "redesign/Phone.png";
+                }
+                else {
+                  image.src = "redesign/Webpage.png";
+                }
               }
-              else if (image.src.match("redesign/Tablet.png")) {
-                image.src = "redesign/Phone.png";
+            </script>
+          </div>
+        </div>
+
+        <div>
+          <h2>High-fidelity Wireframing</h2>
+          <p>Design Style Guide</p>
+          <img src="redesign/Frame 1.png"
+            style="width: 600px; height:100%; padding-bottom: 0;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);">
+          <p>I divided the entire page into different views and skip the repeating menu section.</p>
+          <p style="color:  #0ABAB5">Click the picture to view the next wireframe</p>
+          <img src="redesign/desktop1.png" id="high-fidelity" alt="webpage1"
+            style="cursor:pointer;width:1000px;height: auto;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);"
+            onclick="changeHigh()">
+          <script>
+            function changeHigh() {
+              var image = document.getElementById('high-fidelity');
+              if (image.src.match("redesign/desktop1.png")) {
+                image.src = "redesign/desktop2.png";
+              }
+              else if (image.src.match("redesign/desktop2.png")) {
+                image.src = "redesign/desktop3.png";
               }
               else {
-                image.src = "redesign/Webpage.png";
+                image.src = "redesign/desktop1.png";
               }
             }
           </script>
         </div>
-      </div>
-
-      <div>
-        <h2>High-fidelity Wireframing</h2>
-        <p>Design Style Guide</p>
-        <img src="redesign/Frame 1.png"
-          style="width: 600px; height:100%; padding-bottom: 0;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);">
-        <p>I divided the entire page into different views and skip the repeating menu section.</p>
-        <p style="color:  #0ABAB5">Click the picture to view the next wireframe</p>
-        <img src="redesign/desktop1.png" id="high-fidelity" alt="webpage1"
-          style="cursor:pointer;width:1000px;height: auto;box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);"
-          onclick="changeHigh()">
-        <script>
-          function changeHigh() {
-            var image = document.getElementById('high-fidelity');
-            if (image.src.match("redesign/desktop1.png")) {
-              image.src = "redesign/desktop2.png";
-            }
-            else if (image.src.match("redesign/desktop2.png")) {
-              image.src = "redesign/desktop3.png";
-            }
-            else {
-              image.src = "redesign/desktop1.png";
-            }
-          }
-        </script>
-      </div>
-      <p style="color:  #ba1e68">The wireframing annotations are included in the original report.</p>
-      <div style="text-align: center;">
-        <button onClick="window.open('https://flyingtiger777.github.io/CS1300_Redesign-Webdev-Report/')"
-          class="read-more-2">Read more about the project</button>
-      </div>
+        <p style="color:  #ba1e68">The wireframing annotations are included in the original report.</p>
+        <div style="text-align: center;">
+          <button onClick="window.open('https://flyingtiger777.github.io/CS1300_Redesign-Webdev-Report/')"
+            class="read-more-2">Check the Report</button>
+        </div>
+      </details>
     </div>
 
 
@@ -351,48 +378,146 @@
         <h2>Interface Overview</h2>
         <img src="react.png" alt="bakery interface" style="width: 1000px; height:auto">
       </div>
-      <div>
-        <h2>Usability Analysis</h2>
-        <p>- Used borders and hover effects to indicate the buttons which users can interact with.
-          <br>- Implemented an "All" button to revert from filtering.
-          <br>- Implemented a "Reset" button to reset the sorting settings.
-          <br>- The users can not add duplicated items to the favorite list. By clicking the items in the favorite
-          list, users can remove the item in the list.
-        </p>
-      </div>
-      <div>
-        <h2>Organization of Components</h2>
-        <p>The application consists of 5 components including BakeryItem, Card, CardList, Favorites, and filterList.
-          BakeryItem includes a
-          navigation bar for filtering and sorting as well as a display section for the products. Card and CardList
-          components are for displaying the products in a list of cards style. The favorites component is for the
-          favorites list. Finally, filterList is for updating the list after applying filtering conditions.</p>
-      </div>
+      <p style="color: #ba1e68; padding-top:20px;padding-bottom: 0;"> Click "Read more" to see details</p>
+      <details>
+        <summary class=readmore>Read More</summary>
+        <div>
+          <h2>Usability Analysis</h2>
+          <p>- Used borders and hover effects to indicate the buttons which users can interact with.
+            <br>- Implemented an "All" button to revert from filtering.
+            <br>- Implemented a "Reset" button to reset the sorting settings.
+            <br>- The users can not add duplicated items to the favorite list. By clicking the items in the favorite
+            list, users can remove the item in the list.
+          </p>
+        </div>
+        <div>
+          <h2>Organization of Components</h2>
+          <p>The application consists of 5 components including BakeryItem, Card, CardList, Favorites, and filterList.
+            BakeryItem includes a
+            navigation bar for filtering and sorting as well as a display section for the products. Card and CardList
+            components are for displaying the products in a list of cards style. The favorites component is for the
+            favorites list. Finally, filterList is for updating the list after applying filtering conditions.</p>
+        </div>
 
-      <div>
-        <h2>User Interaction</h2>
-        <p style="padding-bottom: 15px">Users mainly interact with the interface using the buttons. If users click the
-          filtering buttons, the state of
-          types and products will be updated with the filterList component. Similarly, if users click the sorting
-          buttons,
-          the state of types and products will also be updated. I have the "types" parameters to represent different
-          methods, so users can click on different sorting settings and the products will be sorted with different
-          properties such as prices or calories. </p>
-        <p style="padding-bottom: 0px">If the users click on the "add" or "remove" buttons from the
-          product cards or the favorites list, the state of total and favor will be updated as products are added to or
-          removed from the favorites list. The total price inside the Favorites will be automatically calculated and
-          shown
-          in the favorites list.</p>
-      </div>
-      <div style="text-align: center;">
-        <button onClick="window.open('https://flyingtiger777.github.io/bakeryshop/')" class="read-more">Try the Demo
-        </button>
-      </div>
+        <div>
+          <h2>User Interaction</h2>
+          <p style="padding-bottom: 15px">Users mainly interact with the interface using the buttons. If users click the
+            filtering buttons, the state of
+            types and products will be updated with the filterList component. Similarly, if users click the sorting
+            buttons,
+            the state of types and products will also be updated. I have the "types" parameters to represent different
+            methods, so users can click on different sorting settings and the products will be sorted with different
+            properties such as prices or calories. </p>
+          <p style="padding-bottom: 0px">If the users click on the "add" or "remove" buttons from the
+            product cards or the favorites list, the state of total and favor will be updated as products are added to
+            or
+            removed from the favorites list. The total price inside the Favorites will be automatically calculated and
+            shown
+            in the favorites list.</p>
+        </div>
+        <div style="text-align: center;">
+          <button onClick="window.open('https://flyingtiger777.github.io/bakeryshop/')" class="read-more">Try the Demo
+          </button>
+        </div>
+      </details>
+    </div>
+
+    <div id="android" style="height: 50px;"></div>
+    <div class="redesign">
+      <h1>Android Development</h1>
+      <h2>Abstract</h2>
+      <p>Our team’s project is an application for the high school investment club members to view the stock trends. The
+        project can store various stock market data, providing functions via requests. The application allows users to
+        select and examine historical stock prices upon requests sent from the client-side. </p>
+      <h2>Requirements</h2>
+      <p>The basic requirements for the project are as follows: The application should be able to store real-time stock
+        market data to match real-life circumstances. The application needs to allow the user to examine and search for
+        stocks that are available on stock exchanges. To meet such requirements, the major deliverables of the project
+        are a user interface and an interactive backend data server. The crucial steps toward completing this project
+        include needs assessment, project planning, tools installation and set up UI and backend design, database
+        management, review and customer approval, framework development, frontend implementation, assembly, and testing.
+      </p>
+      <p style="color: #ba1e68;"> Click "Read more" to see details</p>
+      <details>
+        <summary class=readmore>Read More</summary>
+        <h2>Interface Overview</h2>
+        <p style="padding-bottom: 0; color:  #0ABAB5 ;"> Click the image to view the next one.</p>
+        <img src="android/interface1.png" id="android-img" style="cursor:pointer; width: 300px; height:auto;"
+          onclick="changeAndroid()">
+        <script>
+          function changeAndroid() {
+            var image = document.getElementById('android-img');
+            if (image.src.match("android/interface1.png")) {
+              image.src = "android/interface2.png";
+            }
+            else if (image.src.match("android/interface2.png")) {
+              image.src = "android/interface3.png";
+            } else {
+              image.src = "android/interface1.png";
+            }
+          }
+        </script>
+        <p style="margin-top: 0;">The application creates a
+          stress-free environment for users to gain hands-on experience in stock trading. Users will be able to modify
+          and
+          delete their datasets and focus on the information that interests them. The application is designed
+          specifically
+          for investment club members and novice investors who are seeking practice in stock trading and testifying
+          their
+          strategies.</p>
+        <p style="color:  #ba1e68">Contact me for the detailed project report.</p>
+    </div>
+    </details>
+
+
+    <div id="contact"></div>
+    <!-- reference to https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+    <div class="contact">
+      <h2>Contact me</h2>
+      <form action="action_page.php">
+        <label style="font-size: 22px;" for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label style="font-size: 22px;" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label style="font-size: 22px;" for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Your email address..">
+
+
+        <label style="font-size: 22px;" for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit" onclick="myFunction(); return false;">
+        <script>
+          function myFunction() {
+            //dummy submit do nothing
+          }
+        </script>
+
+      </form>
     </div>
 
   </div>
 
 
 </body>
+
+<div class="footer-basic">
+  <footer>
+    <div class="social"><a href="#instagram"><i class="icon ion-social-instagram"></i></a><a href="#snapchat"><i
+          class="icon ion-social-snapchat"></i></a><a href="#twitter"><i class="icon ion-social-twitter"></i></a><a
+        href="#facebook"><i class="icon ion-social-facebook"></i></a></div>
+    <ul class="row-container">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">Flyingtiger777 © 2022</p>
+  </footer>
+</div>
+<!-- credit to https://epicbootstrap.com/snippets/footer-basic -->
 
 </html>

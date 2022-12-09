@@ -14,6 +14,18 @@ body {
   margin-top: 100px;
 }
 
+.autotype {
+  width: 100%;
+  height: auto;
+  color: #333;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+
 .bolded {
   font-weight: bold;
   color: #ba1e68;
@@ -39,15 +51,16 @@ body {
 }
 
 .navbar a {
-  text-align: center;
-  width: 8%;
+  width: 10%;
   height: 100px;
   float: left;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #f2f2f2;
-  padding: 30px 30px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .navbar a:hover {
@@ -240,4 +253,138 @@ body {
   margin-left: 250px;
   padding-bottom: 40px;
   height: auto;
+}
+
+/* Reference to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  width: 20%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: #ddd;
+  border: 5px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Audiowide", sans-serif;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #C8BDA4;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.contact {
+  background-color: #414a4c;
+  color: #ddd;
+  padding-top: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+/* <!-- credit to https://epicbootstrap.com/snippets/footer-basic --> */
+.footer-basic {
+  padding: 40px 0;
+  background-color: #414a4c;
+  color: #ddd;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.readmore {
+  padding: 15px;
+  display: flex;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+summary:hover {
+  background: #ba1e68;
 }
